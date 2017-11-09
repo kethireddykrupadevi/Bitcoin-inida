@@ -28,12 +28,12 @@ install_plugin Capistrano::SCM::Git
 #
 require "capistrano/rbenv"
 set :rbenv_type, :user
-set :rbenv_ruby, '2.2.2-p95'
+set :rbenv_ruby, '2.4.1'
 
 
 require 'capistrano/bundler'
-require 'capistrano/rails'
-require 'capistrano/passenger'
+
+
 
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined

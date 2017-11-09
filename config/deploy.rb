@@ -2,7 +2,7 @@
 lock "~> 3.10.0"
 
 set :application, "btcindia"
-set :repo_url, "git@example.com:kethireddykrupadevi/Bitcoin-inida.git"
+set :repo_url, "https://github.com/kethireddykrupadevi/Bitcoin-inida.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -22,6 +22,9 @@ set :deploy_to, "/home/deploy/btcindia"
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "config/secrets.yml"
+
+append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
